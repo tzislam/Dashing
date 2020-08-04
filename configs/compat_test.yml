@@ -1,0 +1,35 @@
+compat_test:
+  global_task: True
+  tasks:
+    - compat_iamr
+    - compat_incflo
+    - modules.compatibility_score.compat_task
+  
+  compat_pairs:
+    - NavierStokes::advance(),incflo::Advance
+
+  data_rescale: True
+
+compat_iamr:
+  data: 'data/iamr_data.32/jobs/'
+
+compat_incflo:
+  data: 'data/incflo_data/n_cell_configurations/16'
+
+compat_nyx1:
+  data: 'data/nyx_data/jobs/'
+  procs:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32
+
+compat_nyx2:
+  data: 'data/nyx_data/jobs/'
+  procs:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32

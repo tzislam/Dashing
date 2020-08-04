@@ -1,0 +1,62 @@
+
+warpx_rsm:
+  data: data/warpx/
+  groups: resources/native_all_filtered.txt
+  force_process: true
+  # procs: using default
+  
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+  
+  # rsm settings
+  rsm_iters: 10000
+  rsm_print: true
+  csv_rsm_path: 'output/warpx/warpx_rsm.csv'
+  csv_err_path: 'output/warpx/warpx_err_rsm.csv'
+
+
+warpx_viz:
+  data: data/warpx/
+  groups: resources/native_all_filtered.txt
+  force_process: false
+  # procs: using default
+  
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  tasks:
+    - viz.barchart.create_barchart
+    - viz.heatmap.create_heatmap
+    - modules.eff.print_loss
+    - viz.bubble.bubble
+    - viz.sunburst.sunburst
+    - viz.linechart.effloss_vs_counter_val
+  
+  # viz settings
+  show_plot: true
+  save_plot: true
+  csv_path: 'output/warpx/warpx_rsm.csv'
+  rsm_path: 'output/warpx/warpx_rsm.csv'
+  rsm_err_path: 'output/warpx/warpx_err_rsm.csv'
+  plt_title: 'warpx'
+
+  # heatmap
+  heat_output: 'viz/output/warpx/warpx_rsm.png'
+
+  # bar
+  bar_output: 'viz/output/warpx/warpx_bar_%s.png'
+
+  # effeciency
+  eff_output: 'viz/output/warpx/warpx_eff_%s.png'
+
+  # bubble
+  bubble_n: 10
+  bubble_output: 'viz/output/warpx/warpx_bubble_%s.pdf'
+
+  #line
+  line_output: 'viz/output/warpx/warpx_line_%s.png'

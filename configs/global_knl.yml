@@ -1,0 +1,63 @@
+nyx_knl_rsm:
+  data: 'data/nyx_knl/jobs/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+
+  name: 'Nyx'
+
+warpx_knl_rsm:
+  data: 'data/warpx-knl/jobs/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+
+  name: 'WarpX'
+
+incflo_knl_rsm:
+  data: 'data/incflo_knl/jobs/32'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+  name: 'Incflo'
+
+
+iamr_knl_rsm:
+  data: 'data/iamr_knl.32/jobs/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+  name: 'IAMR'
+
+
+global_knl:
+  global_task: True
+  tasks:
+    - warpx_knl_rsm
+    - iamr_knl_rsm
+    - incflo_knl_rsm
+    - nyx_knl_rsm
+    #- modules.compatibility_score.compat_task
+    - viz.res_compat_graph.create_res_versus_compat_graph
+    - viz.dashboard.dashboard_init
+  compat_pairs:
+    - iamr_rsm:NavierStokes::advance(),incflo_rsm:incflo::Advance
+
+  data_rescale: True
+  rsm_iters: 5000
+  rsm_print: True
+  rsm_use_nn_solver: False
+  arch: knl
+  port: 8050

@@ -1,0 +1,29 @@
+.navbar {
+	overflow: hidden;
+	background-color: #e9e9e9;
+	list-style-type: none; 
+	text-align: center;
+	width: 100%;
+}
+
+.navbar a {
+	display: block;
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #ddd ;
+}
+
+.navbar input[type=text] {
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-right: 12px;
+	font-size: 17px;
+}

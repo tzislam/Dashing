@@ -1,0 +1,62 @@
+
+incflo_rsm:
+  data: data/incflo_native/
+  groups: resources/native_all_filtered.txt
+  force_process: true
+  # procs: using default
+
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+  
+  # rsm settings
+  rsm_iters: 100
+  rsm_print: true
+  csv_rsm_path: 'output/incflo/incflo_rsm.csv'
+  csv_err_path: 'output/incflo/incflo_err_rsm.csv'
+
+
+incflo_viz:
+  data: data/incflo_native/
+  groups: resources/native_all_filtered.txt
+  force_process: false
+  # procs: using default
+  
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_barchart
+    #- viz.heatmap.create_heatmap
+    #- modules.eff.print_loss
+    - viz.bubble.bubble
+    #- viz.sunburst.sunburst
+ 
+  # viz settings
+  show_plot: false
+  save_plot: false
+  csv_path: 'output/incflo/incflo_rsm.csv'
+  rsm_path: 'output/incflo/incflo_rsm.csv'
+  rsm_err_path: 'output/incflo/incflo_err_rsm.csv'
+  plt_title: 'incflo'
+
+  # heatmap
+  heat_output: 'viz/output/incflo/incflo_rsm.png'
+
+  # bar
+  bar_output: 'viz/output/incflo/incflo_bar_%s.png'
+
+  # effeciency
+  eff_output: 'viz/output/incflo/incflo_eff_%s.png'
+
+  # bubble
+  bubble_n: 10
+  bubble_output: 'viz/output/incflo/incflo_bubble_%s.pdf'
+
+  # line
+  line_output: 'viz/output/incflo/incflo_line_%s.png'

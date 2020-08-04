@@ -1,0 +1,68 @@
+nyx:
+  data: 'data/nyx_haswell_amrex/jobs/'
+  procs:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+  rsm_use_nn_solver: True
+  name: 'Nyx'
+nyx_huge:
+  data: 'data/nyx_hugepages4M/jobs/'
+  procs:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.barchart.load_imbalance
+    - viz.linechart.raw_values_per_proc_config
+  rsm_use_nn_solver: True
+  name: 'Nyx_hugepages'
+
+main:
+  tasks:
+    - nyx
+    - nyx_huge 
+    #- modules.compatibility_score.compat_task
+    - viz.res_compat_graph.create_res_versus_compat_graph
+    - viz.runtime_compare.create_runtime_comparison
+    - viz.dashboard.dashboard_init
+  
+  compat_pairs:
+    - nyx:Nyx::strang_hydro(),nyx_old:Nyx::strang_hydro()
+    - nyx:analriem,nyx_old:analriem
+  runtime_pairs:
+    - nyx:Nyx::strang_hydro(),nyx_huge:Nyx::strang_hydro()
+
+  arch: haswell2
+  data_rescale: True
+  rsm_iters: 5000
+  rsm_print: True
+  rsm_use_nn_solver: False
+  port: 7500

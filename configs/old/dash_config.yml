@@ -1,0 +1,138 @@
+
+nyx_dash:
+  # Where data_loader should gets it data
+  data: data/nyx_8_7_data/
+  groups: resources/native_all_filtered.txt
+
+  # If left true, data_loader will load or dump to a pkl
+  # RSM will compute its scores and allow other tasks to access it
+  # so it's nice to compute this once, leave force_process to false
+  # and mess around with viz
+  force_process: true
+
+  # configurations
+  procs:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32
+  
+  # Pre-processing done on data
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  # modules to run
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+  
+  # rsm settings
+  rsm_iters: 10000
+  rsm_print: true
+  rsm_use_nn_solver: true
+
+  # If set, rsm data will be written out
+  # Comment out if not desired
+  csv_rsm_results: 'output/nyx/nyx_rsm.csv'
+  csv_rsm_res_errors: 'output/nyx/nyx_rsm_res_err.csv'
+  csv_rsm_ev_errors: 'output/nyx/nyx_rsm_ev_err.csv'
+  csv_rsm_alphas: 'output/nyx/nyx_rsm_weights.csv'
+  
+  # viz settings
+  show_plot: false
+  save_plot: false
+  plt_title: 'Nyx'
+
+
+iamr_dash:
+  data: data/iamr_data.32/
+  groups: resources/native_all_filtered.txt
+  force_process: true
+
+  procs:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  
+  # Pre-processing done on data
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  # modules to run
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+  
+  # rsm settings
+  rsm_iters: 10000
+  rsm_print: true
+  rsm_use_nn_solver: true
+
+  # If set, rsm data will be written out
+  # Comment out if not desired
+  csv_rsm_results: 'output/iamr.32/iamr_rsm.csv'
+  csv_rsm_res_errors: 'output/iamr.32/iamr_rsm_res_err.csv'
+  csv_rsm_ev_errors: 'output/iamr.32/iamr_rsm_ev_err.csv'
+  csv_rsm_alphas: 'output/iamr.32/iamr_rsm_weights.csv'
+  
+  # viz settings
+  show_plot: false
+  save_plot: false
+  plt_title: 'IAMR'
+
+warpx_dash:
+  data: data/warpx/
+  groups: resources/native_all_filtered.txt
+  force_process: true
+
+  procs:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  
+  # Pre-processing done on data
+  data_remove: false
+  data_rescale: true
+  data_norm: false
+
+  # modules to run
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+  
+  # rsm settings
+  rsm_iters: 10000
+  rsm_print: true
+  rsm_use_nn_solver: true
+
+  # If set, rsm data will be written out
+  # Comment out if not desired
+  csv_rsm_results: 'output/warpx_new/warpx_rsm.csv'
+  csv_rsm_res_errors: 'output/warpx_new/warpx_rsm_res_err.csv'
+  csv_rsm_ev_errors: 'output/warpx_new/warpx_rsm_ev_err.csv'
+  csv_rsm_alphas: 'output/warpx_new/warpx_rsm_weights.csv'
+  
+  # viz settings
+  show_plot: false
+  save_plot: false
+  plt_title: 'WarpX'

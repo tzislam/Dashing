@@ -1,0 +1,29 @@
+test_config:
+  data: 'data/test_data/test.csv'
+  procs:
+    - 1
+    - 2
+    - 4
+    - 8
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+  rsm_use_nn_solver: True
+  name: 'CSV Test'
+
+
+main:
+  tasks:
+    - test_config
+    - viz.dashboard.dashboard_init
+
+  arch: haswell2
+  data_rescale: True
+  rsm_iters: 100
+  rsm_print: True
+  rsm_use_nn_solver: False
+  port: 7500

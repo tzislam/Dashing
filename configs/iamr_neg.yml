@@ -1,0 +1,123 @@
+incflo_32:
+  data: 'data/incflo_data/n_cell_configurations/32/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+  procs:
+    - 1
+#    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  name: 'Incflo_32'
+
+incflo_64:
+  data: 'data/incflo_data/n_cell_configurations/64/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+  procs:
+    - 1
+#    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+
+  name: 'Incflo_64'
+
+incflo_128:
+  data: 'data/incflo_data/n_cell_configurations/128/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+  procs:
+    - 1
+#    - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+
+  name: 'Incflo_128'
+
+iamr:
+  data: 'data/iamr_data.32/jobs/'
+  tasks:
+    - modules.resource_score.compute_rsm_task_all_regions
+    #- viz.barchart.create_rsm_error_barchart
+    - viz.barchart.create_rsm_percent_barchart
+    - viz.heatmap.create_heatmap
+    - viz.sunburst.sunburst
+    - viz.linechart.raw_values_per_proc_config
+    - viz.barchart.load_imbalance
+
+  procs:
+    - 1
+ #   - 2
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+    - 28
+    - 32
+  
+  name: 'IAMR_32'
+
+
+main:
+  tasks:
+    - iamr
+    - incflo_32
+    - incflo_64
+    - incflo_128
+    - modules.compatibility_score.compat_task
+    - viz.res_compat_graph.create_res_versus_compat_graph
+    - viz.dashboard.dashboard_init
+  
+  compat_pairs:
+    - iamr:MLABecLaplacian::Fsmooth(),incflo_32:MLEBABecLap::Fsmooth()
+    - iamr:MLABecLaplacian::Fsmooth(),incflo_64:MLEBABecLap::Fsmooth()
+    - iamr:MLABecLaplacian::Fsmooth(),incflo_128:MLEBABecLap::Fsmooth()
+    - iamr:NavierStokes::advance(),incflo_32:incflo::Advance
+    - iamr:NavierStokes::advance(),incflo_64:incflo::Advance
+    - iamr:NavierStokes::advance(),incflo_128:incflo::Advance
+  arch: haswell2
+  data_rescale: True
+  rsm_iters: 5000
+  rsm_print: True
+  rsm_use_nn_solver: False
+  port: 7810
+  save_sunburst: True
+  save_heatmap: True
+  save_compat: True
+  compat_labels: True

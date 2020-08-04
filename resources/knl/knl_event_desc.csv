@@ -1,0 +1,585 @@
+Event,Desc
+BACLEARS.ALL,Counts the number of times the front end resteers for any branch as a result of another branch handling mechanism in the front end.
+BACLEARS.COND,Counts the number of times the front end resteers for conditional branches as a result of another branch handling mechanism in the front end.
+BACLEARS.RETURN,Counts the number of times the front end resteers for RET branches as a result of another branch handling mechanism in the front end.
+BR_INST_RETIRED.ALL_BRANCHES,Counts the number of branch instructions retired
+BR_INST_RETIRED.ALL_BRANCHES_PS,Counts the number of branch instructions retired (Precise Event)
+BR_INST_RETIRED.CALL,Counts the number of near CALL branch instructions retired.
+BR_INST_RETIRED.CALL_PS,Counts the number of near CALL branch instructions retired. (Precise Event)
+BR_INST_RETIRED.FAR_BRANCH,Counts the number of far branch instructions retired.
+BR_INST_RETIRED.FAR_BRANCH_PS,Counts the number of far branch instructions retired. (Precise Event)
+BR_INST_RETIRED.IND_CALL,Counts the number of near indirect CALL branch instructions retired.
+BR_INST_RETIRED.IND_CALL_PS,Counts the number of near indirect CALL branch instructions retired. (Precise Event)
+BR_INST_RETIRED.JCC,Counts the number of branch instructions retired that were conditional jumps.
+BR_INST_RETIRED.JCC_PS,Counts the number of branch instructions retired that were conditional jumps. (Precise Event)
+BR_INST_RETIRED.NON_RETURN_IND,Counts the number of branch instructions retired that were near indirect CALL or near indirect JMP.
+BR_INST_RETIRED.NON_RETURN_IND_PS,Counts the number of branch instructions retired that were near indirect CALL or near indirect JMP. (Precise Event)
+BR_INST_RETIRED.REL_CALL,Counts the number of near relative CALL branch instructions retired.
+BR_INST_RETIRED.REL_CALL_PS,Counts the number of near relative CALL branch instructions retired. (Precise Event)
+BR_INST_RETIRED.RETURN,Counts the number of near RET branch instructions retired.
+BR_INST_RETIRED.RETURN_PS,Counts the number of near RET branch instructions retired. (Precise Event)
+BR_INST_RETIRED.TAKEN_JCC,Counts the number of branch instructions retired that were taken conditional jumps.
+BR_INST_RETIRED.TAKEN_JCC_PS,Counts the number of branch instructions retired that were conditional jumps and predicted taken. (Precise Event)
+BR_MISP_RETIRED.ALL_BRANCHES,Counts the number of mispredicted branch instructions retired
+BR_MISP_RETIRED.ALL_BRANCHES_PS,Counts the number of mispredicted branch instructions retired (Precise Event)
+BR_MISP_RETIRED.CALL,Counts the number of mispredicted near CALL branch instructions retired.
+BR_MISP_RETIRED.CALL_PS,Counts the number of mispredicted near CALL branch instructions retired. (Precise Event)
+BR_MISP_RETIRED.FAR_BRANCH,Counts the number of mispredicted far branch instructions retired.
+BR_MISP_RETIRED.FAR_BRANCH_PS,Counts the number of mispredicted far branch instructions retired. (Precise Event)
+BR_MISP_RETIRED.IND_CALL,Counts the number of mispredicted near indirect CALL branch instructions retired.
+BR_MISP_RETIRED.IND_CALL_PS,Counts the number of mispredicted near indirect CALL branch instructions retired. (Precise Event)
+BR_MISP_RETIRED.JCC,Counts the number of mispredicted branch instructions retired that were conditional jumps.
+BR_MISP_RETIRED.JCC_PS,Counts the number of mispredicted branch instructions retired that were conditional jumps. (Precise Event)
+BR_MISP_RETIRED.NON_RETURN_IND,Counts the number of mispredicted branch instructions retired that were near indirect CALL or near indirect JMP.
+BR_MISP_RETIRED.NON_RETURN_IND_PS,Counts the number of mispredicted branch instructions retired that were near indirect CALL or near indirect JMP. (Precise Event)
+BR_MISP_RETIRED.REL_CALL,Counts the number of mispredicted near relative CALL branch instructions retired.
+BR_MISP_RETIRED.REL_CALL_PS,Counts the number of mispredicted near relative CALL branch instructions retired. (Precise Event)
+BR_MISP_RETIRED.RETURN,Counts the number of mispredicted near RET branch instructions retired.
+BR_MISP_RETIRED.RETURN_PS,Counts the number of mispredicted near RET branch instructions retired. (Precise Event)
+BR_MISP_RETIRED.TAKEN_JCC,Counts the number of mispredicted branch instructions retired that were taken conditional jumps.
+BR_MISP_RETIRED.TAKEN_JCC_PS,Counts the number of mispredicted branch instructions retired that were conditional jumps and predicted taken. (Precise Event)
+CORE_REJECT_L2Q.ALL,Counts the number of MEC requests that were not accepted into the L2Q because of any L2  queue reject condition. There is no concept of at-ret here. It might include requests due to instructions in the speculative path.
+CPU_CLK_UNHALTED.REF,Counts the number of unhalted reference clock cycles
+CPU_CLK_UNHALTED.REF_TSC,Fixed Counter: Counts the number of unhalted reference clock cycles
+CPU_CLK_UNHALTED.THREAD,"This event counts the number of core cycles while the thread is not in a halt state. The thread enters the halt state when it is running the HLT instruction. This event is a component in many key event ratios. The core frequency may change from time to time due to transitions associated with Enhanced Intel SpeedStep Technology or TM2. For this reason this event may have a changing ratio with regards to time. When the core frequency is constant, this event can approximate elapsed time while the core was not in the halt state. It is counted on a dedicated fixed counter"
+CPU_CLK_UNHALTED.THREAD_P,Counts the number of unhalted core clock cycles
+CYCLES_DIV_BUSY.ALL,"This event counts cycles when the divider is busy. More specifically cycles when the divide unit is unable to accept a new divide uop because it is busy processing a previously dispatched uop. The cycles will be counted irrespective of whether or not another divide uop is waiting to enter the divide unit (from the RS). This event counts integer divides, x87 divides, divss, divsd, sqrtss, sqrtsd event and does not count vector divides."
+FETCH_STALL.ICACHE_FILL_PENDING_CYCLES,This event counts the number of core cycles the fetch stalls because of an icache miss. This is a cumulative count of cycles the NIP stalled for all icache misses. 
+ICACHE.ACCESSES,"Counts all instruction fetches, including uncacheable fetches."
+ICACHE.HIT,Counts all instruction fetches that hit the instruction cache.
+ICACHE.MISSES,Counts all instruction fetches that miss the instruction cache or produce memory requests. An instruction fetch miss is counted only once and not once for every cycle it is outstanding.
+INST_RETIRED.ANY,"This event counts the number of instructions that retire.  For instructions that consist of multiple micro-ops, this event counts exactly once, as the last micro-op of the instruction retires.  The event continues counting while instructions retire, including during interrupt service routines caused by hardware interrupts, faults or traps."
+INST_RETIRED.ANY_P,Counts the total number of instructions retired
+INST_RETIRED.ANY_PS,Counts the number of instructions retired (Precise Event)
+L2_PREFETCHER.ALLOC_XQ,Counts the number of L2HWP allocated into XQ GP
+L2_REQUESTS.MISS,Counts the number of L2 cache misses
+L2_REQUESTS.REFERENCE,Counts the total number of L2 cache references.
+L2_REQUESTS_REJECT.ALL,"Counts the number of MEC requests from the L2Q that reference a cache line (cacheable requests) excluding SW prefetches filling only to L2 cache and L1 evictions (automatically excludes L2HWP, UC, WC) that were rejected - Multiple repeated rejects should be counted multiple times"
+LONGEST_LAT_CACHE.MISS,Counts the number of L2 cache misses
+LONGEST_LAT_CACHE.REFERENCE,Counts the total number of L2 cache references.
+MACHINE_CLEARS.ALL,Counts all machine clears
+MACHINE_CLEARS.FP_ASSIST,This event counts the number of times that the pipeline stalled due to FP operations needing assists.
+MACHINE_CLEARS.MEMORY_ORDERING,Counts the number of times the machine clears due to memory ordering hazards
+MACHINE_CLEARS.SMC,Counts the number of times that the machine clears due to program modifying data within 1K of a recently fetched code page
+MEM_UOPS_RETIRED.ALL_LOADS,This event counts the number of load micro-ops retired.
+MEM_UOPS_RETIRED.ALL_STORES,This event counts the number of store micro-ops retired.
+MEM_UOPS_RETIRED.DTLB_MISS_LOADS,Counts the number of load micro-ops retired that cause a DTLB miss
+MEM_UOPS_RETIRED.DTLB_MISS_LOADS_PS,Counts the number of load micro-ops retired that cause a DTLB miss (Precise Event)
+MEM_UOPS_RETIRED.HITM,Counts the loads retired that get the data from the other core in the same tile in M state
+MEM_UOPS_RETIRED.HITM_PS,This event counts the number of load micro-ops retired that got data from another core’s cache. (Precise Event).
+MEM_UOPS_RETIRED.L1_MISS_LOADS,This event counts the number of load micro-ops retired that miss in L1 Data cache. Note that prefetch misses will not be counted. 
+MEM_UOPS_RETIRED.L2_HIT_LOADS,Counts the number of load micro-ops retired that hit in the L2
+MEM_UOPS_RETIRED.L2_HIT_LOADS_PS,This event counts the number of load micro-uops retired that hit in the L2 (Precise Event)
+MEM_UOPS_RETIRED.L2_MISS_LOADS,Counts the number of load micro-ops retired that miss in the L2
+MEM_UOPS_RETIRED.L2_MISS_LOADS_PS,This event counts the number of load micro-ops retired that miss in the L2 (Precise Event)
+MEM_UOPS_RETIRED.UTLB_MISS_LOADS,Counts the number of load micro-ops retired that caused micro TLB miss
+MS_DECODED.MS_ENTRY,Counts the number of times the MSROM starts a flow of uops.
+NO_ALLOC_CYCLES.ALL,Counts the total number of core cycles when no micro-ops are allocated for any reason.
+NO_ALLOC_CYCLES.MISPREDICTS,This event counts the number of core cycles when no uops are allocated and the alloc pipe is stalled waiting for a mispredicted branch to retire.
+NO_ALLOC_CYCLES.NOT_DELIVERED,"This event counts the number of core cycles when no uops are allocated, the instruction queue is empty and the alloc pipe is stalled waiting for instructions to be fetched."
+NO_ALLOC_CYCLES.RAT_STALL,Counts the number of core cycles when no micro-ops are allocated and a RATstall (caused by reservation station full) is asserted.  
+NO_ALLOC_CYCLES.ROB_FULL,Counts the number of core cycles when no micro-ops are allocated and the ROB is full
+OFFCORE_RESPONSE,Counts the matrix events specified by MSR_OFFCORE_RESPx
+PAGE_WALKS.CYCLES,This event counts every cycle when a data (D) page walk or instruction (I) page walk is in progress.
+PAGE_WALKS.D_SIDE_CYCLES,Counts the total number of core cycles for all the D-side page walks. The cycles for page walks started in speculative path will also be included.
+PAGE_WALKS.D_SIDE_WALKS,Counts the total D-side page walks that are completed or started. The page walks started in the speculative path will also be counted
+PAGE_WALKS.I_SIDE_CYCLES,This event counts every cycle when an I-side (walks due to an instruction fetch) page walk is in progress. 
+PAGE_WALKS.I_SIDE_WALKS,Counts the total I-side page walks that are completed.
+PAGE_WALKS.WALKS,Counts the total page walks that are completed (I-side and D-side)
+RECYCLEQ.ANY_LD,Counts any retired load that was pushed into the recycle queue for any reason.
+RECYCLEQ.ANY_ST,Counts any retired store that was pushed into the recycle queue for any reason.
+RECYCLEQ.LD_BLOCK_ST_FORWARD,Counts the number of occurrences a retired load gets blocked because its address partially overlaps with a store
+RECYCLEQ.LD_BLOCK_ST_FORWARD_PS,This event counts the number of retired loads that were prohibited from receiving forwarded data from a previous store because of address mismatch. 
+RECYCLEQ.LD_BLOCK_STD_NOTREADY,Counts the number of occurrences a retired load gets blocked because its address overlaps with a store whose data is not ready
+RECYCLEQ.LD_SPLITS,Counts the number of occurrences a retired load that is a cache line split. Each split should be counted only once.
+RECYCLEQ.LD_SPLITS_PS,This event counts the number of retired loads which was pushed into the recycled queue that experienced cache line boundary splits (Precise event). Not that each split should be counted only once.
+RECYCLEQ.LOCK,Counts all the retired locked loads. It does not include stores because we would double count if we count stores
+RECYCLEQ.ST_SPLITS,This event counts the number of retired store that experienced a cache line boundary split(Precise Event). Note that each spilt should be counted only once.
+RECYCLEQ.STA_FULL,Counts the store micro-ops retired that were pushed in the rehad queue because the store address buffer is full
+RS_FULL_STALL.ALL,Counts the total number of core cycles allocation pipeline is stalled when any one of the reservation stations is full.
+RS_FULL_STALL.MEC,Counts the number of core cycles when allocation pipeline is stalled and is waiting for a free MEC reservation station entry.
+UOPS_RETIRED.ALL,"This event counts the number of micro-ops (uops) retired. The processor decodes complex macro instructions into a sequence of simpler uops. Most instructions are composed of one or two uops. Some instructions are decoded into longer sequences such as repeat instructions, floating point transcendental instructions, and assists. "
+UOPS_RETIRED.MS,This event counts the number of micro-ops retired that were supplied from MSROM.
+UOPS_RETIRED.PACKED_SIMD,"The length of the packed operation (128bits, 256bits or 512bits) is not taken into account when updating the counter; all count the same (+1). 
+Mask (k) registers are ignored. For example: a micro-op operating with a mask that only enables one element or even zero elements will still trigger this counter (+1)
+This event is defined at the micro-op level and not instruction level. Most instructions are implemented with one micro-op but not all."
+UOPS_RETIRED.SCALAR_SIMD,This event is defined at the micro-op level and not instruction level. Most instructions are implemented with one micro-op but not all.
+UNC_C_TOR_INSERTS.IPQ_HIT,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IPQ
+UNC_C_TOR_INSERTS.IPQ_MISS,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IPQ
+UNC_C_TOR_INSERTS.IRQ_HIT,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IRQ
+UNC_C_TOR_INSERTS.IRQ_MISS,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IRQ 
+UNC_C_TOR_INSERTS.LOC_ALL,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IRQ or PRQ
+UNC_C_TOR_INSERTS.PRQ_HIT,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -PRQ
+UNC_C_TOR_INSERTS.PRQ_MISS,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -PRQ
+UNC_E_E_CLOCKTICKS,ECLK count
+UNC_E_EDC_ACCESS.HIT_CLEAN,Counts the number of read requests and streaming stores that hit in MCDRAM cache and the data in MCDRAM is clean with respect to DDR. This event is only valid in cache and hybrid memory mode.
+UNC_E_EDC_ACCESS.HIT_DIRTY,Counts the number of read requests and streaming stores that hit in MCDRAM cache and the data in MCDRAM is dirty with respect to DDR. This event is only valid in cache and hybrid memory mode. 
+UNC_E_EDC_ACCESS.MISS_CLEAN,Counts the number of read requests and streaming stores that miss in MCDRAM cache and the data evicted from the MCDRAM is clean with respect to DDR. This event is only valid in cache and hybrid memory mode.
+UNC_E_EDC_ACCESS.MISS_DIRTY,Counts the number of read requests and streaming stores that miss in MCDRAM cache and the data evicted from the MCDRAM is dirty with respect to DDR. This event is only valid in cache and hybrid memory mode.
+UNC_E_EDC_ACCESS.MISS_INVALID,Number of EDC Hits or Misses. Miss I
+UNC_E_RPQ_INSERTS,"Counts the number of read requests received by the MCDRAM controller. This event is valid in all three memory modes: flat, cache and hybrid. In cache and hybrid memory mode, this event counts all read requests as well as streaming stores that hit or miss in the MCDRAM cache. "
+UNC_E_U_CLOCKTICKS,UCLK count
+UNC_E_WPQ_INSERTS,"Counts the number of write requests received by the MCDRAM controller. This event is valid in all three memory modes: flat, cache and hybrid. In cache and hybrid memory mode, this event counts all streaming stores, writebacks and, read requests that miss in MCDRAM cache."
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR0,CMS Agent0 AD Credits Acquired For Transgress 0
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR1,CMS Agent0 AD Credits Acquired For Transgress 1
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR2,CMS Agent0 AD Credits Acquired For Transgress 2
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR3,CMS Agent0 AD Credits Acquired For Transgress 3
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR4,CMS Agent0 AD Credits Acquired For Transgress 4
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR5,CMS Agent0 AD Credits Acquired For Transgress 5
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR6,CMS Agent0 AD Credits Acquired For Transgress 6
+UNC_H_AG0_AD_CRD_ACQUIRED.TGR7,CMS Agent0 AD Credits Acquired For Transgress 7
+UNC_H_AG0_AD_CRD_ACQUIRED_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent0 AD Credits Acquired For Transgress 0-7
+UNC_H_AG0_AD_CRD_ACQUIRED_EXT.TGR8,CMS Agent0 AD Credits Acquired For Transgress 8
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR0,CMS Agent0 AD Credits Occupancy For Transgress 0
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR1,CMS Agent0 AD Credits Occupancy For Transgress 1
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR2,CMS Agent0 AD Credits Occupancy For Transgress 2
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR3,CMS Agent0 AD Credits Occupancy For Transgress 3
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR4,CMS Agent0 AD Credits Occupancy For Transgress 4
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR5,CMS Agent0 AD Credits Occupancy For Transgress 5
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR6,CMS Agent0 AD Credits Occupancy For Transgress 6
+UNC_H_AG0_AD_CRD_OCCUPANCY.TGR7,CMS Agent0 AD Credits Occupancy For Transgress 7
+UNC_H_AG0_AD_CRD_OCCUPANCY_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent0 AD Credits Occupancy For Transgress 0-7
+UNC_H_AG0_AD_CRD_OCCUPANCY_EXT.TGR8,CMS Agent0 AD Credits Occupancy For Transgress 8
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR0,CMS Agent0 BL Credits Acquired For Transgress 0
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR1,CMS Agent0 BL Credits Acquired For Transgress 1
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR2,CMS Agent0 BL Credits Acquired For Transgress 2
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR3,CMS Agent0 BL Credits Acquired For Transgress 3
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR4,CMS Agent0 BL Credits Acquired For Transgress 4
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR5,CMS Agent0 BL Credits Acquired For Transgress 5
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR6,CMS Agent0 BL Credits Acquired For Transgress 6
+UNC_H_AG0_BL_CRD_ACQUIRED.TGR7,CMS Agent0 BL Credits Acquired For Transgress 7
+UNC_H_AG0_BL_CRD_ACQUIRED_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent0 BL Credits Acquired For Transgress 0-7
+UNC_H_AG0_BL_CRD_ACQUIRED_EXT.TGR8,CMS Agent0 BL Credits Acquired For Transgress 8
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR0,CMS Agent0 BL Credits Occupancy For Transgress 0
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR1,CMS Agent0 BL Credits Occupancy For Transgress 1
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR2,CMS Agent0 BL Credits Occupancy For Transgress 2
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR3,CMS Agent0 BL Credits Occupancy For Transgress 3
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR4,CMS Agent0 BL Credits Occupancy For Transgress 4
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR5,CMS Agent0 BL Credits Occupancy For Transgress 5
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR6,CMS Agent0 BL Credits Occupancy For Transgress 6
+UNC_H_AG0_BL_CRD_OCCUPANCY.TGR7,CMS Agent0 BL Credits Occupancy For Transgress 7
+UNC_H_AG0_BL_CRD_OCCUPANCY_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent0 BL Credits Occupancy For Transgress 0-7
+UNC_H_AG0_BL_CRD_OCCUPANCY_EXT.TGR8,CMS Agent0 BL Credits Occupancy For Transgress 8
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR0,Stall on No AD Transgress Credits For Transgress 0
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR1,Stall on No AD Transgress Credits For Transgress 1
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR2,Stall on No AD Transgress Credits For Transgress 2
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR3,Stall on No AD Transgress Credits For Transgress 3
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR4,Stall on No AD Transgress Credits For Transgress 4
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR5,Stall on No AD Transgress Credits For Transgress 5
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR6,Stall on No AD Transgress Credits For Transgress 6
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD.TGR7,Stall on No AD Transgress Credits For Transgress 7
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD_EXT.ANY_OF_TGR0_THRU_TGR7,Stall on No AD Transgress Credits For Transgress 0-7
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_AD_EXT.TGR8,Stall on No AD Transgress Credits For Transgress 8
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR0,Stall on No AD Transgress Credits For Transgress 0
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR1,Stall on No AD Transgress Credits For Transgress 1
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR2,Stall on No AD Transgress Credits For Transgress 2
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR3,Stall on No AD Transgress Credits For Transgress 3
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR4,Stall on No AD Transgress Credits For Transgress 4
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR5,Stall on No AD Transgress Credits For Transgress 5
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR6,Stall on No AD Transgress Credits For Transgress 6
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL.TGR7,Stall on No AD Transgress Credits For Transgress 7
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL_EXT.ANY_OF_TGR0_THRU_TGR7,Stall on No AD Transgress Credits For Transgress 0-7
+UNC_H_AG0_STALL_NO_CRD_EGRESS_HORZ_BL_EXT.TGR8,Stall on No AD Transgress Credits For Transgress 8
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR0,CMS Agent1 AD Credits Acquired For Transgress 0
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR1,CMS Agent1 AD Credits Acquired For Transgress 1
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR2,CMS Agent1 AD Credits Acquired For Transgress 2
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR3,CMS Agent1 AD Credits Acquired For Transgress 3
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR4,CMS Agent1 AD Credits Acquired For Transgress 4
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR5,CMS Agent1 AD Credits Acquired For Transgress 5
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR6,CMS Agent1 AD Credits Acquired For Transgress 6
+UNC_H_AG1_AD_CRD_ACQUIRED.TGR7,CMS Agent1 AD Credits Acquired For Transgress 7
+UNC_H_AG1_AD_CRD_ACQUIRED_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent1 AD Credits Acquired For Transgress 0-7
+UNC_H_AG1_AD_CRD_ACQUIRED_EXT.TGR8,CMS Agent1 AD Credits Acquired For Transgress 8
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR0,CMS Agent1 AD Credits Occupancy For Transgress 0
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR1,CMS Agent1 AD Credits Occupancy For Transgress 1
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR2,CMS Agent1 AD Credits Occupancy For Transgress 2
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR3,CMS Agent1 AD Credits Occupancy For Transgress 3
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR4,CMS Agent1 AD Credits Occupancy For Transgress 4
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR5,CMS Agent1 AD Credits Occupancy For Transgress 5
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR6,CMS Agent1 AD Credits Occupancy For Transgress 6
+UNC_H_AG1_AD_CRD_OCCUPANCY.TGR7,CMS Agent1 AD Credits Occupancy For Transgress 7
+UNC_H_AG1_AD_CRD_OCCUPANCY_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent1 AD Credits Occupancy For Transgress 0-7
+UNC_H_AG1_AD_CRD_OCCUPANCY_EXT.TGR8,CMS Agent1 AD Credits Occupancy For Transgress 8
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR0,CMS Agent1 BL Credits Acquired For Transgress 0
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR1,CMS Agent1 BL Credits Acquired For Transgress 1
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR2,CMS Agent1 BL Credits Acquired For Transgress 2
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR3,CMS Agent1 BL Credits Acquired For Transgress 3
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR4,CMS Agent1 BL Credits Acquired For Transgress 4
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR5,CMS Agent1 BL Credits Acquired For Transgress 5
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR6,CMS Agent1 BL Credits Acquired For Transgress 6
+UNC_H_AG1_BL_CRD_ACQUIRED.TGR7,CMS Agent1 BL Credits Acquired For Transgress 7
+UNC_H_AG1_BL_CRD_ACQUIRED_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent1 BL Credits Acquired For Transgress 0-7
+UNC_H_AG1_BL_CRD_ACQUIRED_EXT.TGR8,CMS Agent1 BL Credits Acquired For Transgress 8
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR0,CMS Agent1 BL Credits Occupancy For Transgress 0
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR1,CMS Agent1 BL Credits Occupancy For Transgress 1
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR2,CMS Agent1 BL Credits Occupancy For Transgress 2
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR3,CMS Agent1 BL Credits Occupancy For Transgress 3
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR4,CMS Agent1 BL Credits Occupancy For Transgress 4
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR5,CMS Agent1 BL Credits Occupancy For Transgress 5
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR6,CMS Agent1 BL Credits Occupancy For Transgress 6
+UNC_H_AG1_BL_CRD_OCCUPANCY.TGR7,CMS Agent1 BL Credits Occupancy For Transgress 7
+UNC_H_AG1_BL_CRD_OCCUPANCY_EXT.ANY_OF_TGR0_THRU_TGR7,CMS Agent1 BL Credits Occupancy For Transgress 0-7
+UNC_H_AG1_BL_CRD_OCCUPANCY_EXT.TGR8,CMS Agent1 BL Credits Occupancy For Transgress 8
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR0,Stall on No AD Transgress Credits For Transgress 0
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR1,Stall on No AD Transgress Credits For Transgress 1
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR2,Stall on No AD Transgress Credits For Transgress 2
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR3,Stall on No AD Transgress Credits For Transgress 3
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR4,Stall on No AD Transgress Credits For Transgress 4
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR5,Stall on No AD Transgress Credits For Transgress 5
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR6,Stall on No AD Transgress Credits For Transgress 6
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD.TGR7,Stall on No AD Transgress Credits For Transgress 7
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD_EXT.ANY_OF_TGR0_THRU_TGR7,Stall on No AD Transgress Credits For Transgress 0-7
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_AD_EXT.TGR8,Stall on No AD Transgress Credits For Transgress 8
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR0,Stall on No AD Transgress Credits For Transgress 0
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR1,Stall on No AD Transgress Credits For Transgress 1
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR2,Stall on No AD Transgress Credits For Transgress 2
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR3,Stall on No AD Transgress Credits For Transgress 3
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR4,Stall on No AD Transgress Credits For Transgress 4
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR5,Stall on No AD Transgress Credits For Transgress 5
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR6,Stall on No AD Transgress Credits For Transgress 6
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL.TGR7,Stall on No AD Transgress Credits For Transgress 7
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL_EXT.ANY_OF_TGR0_THRU_TGR7,Stall on No AD Transgress Credits For Transgress 0-7
+UNC_H_AG1_STALL_NO_CRD_EGRESS_HORZ_BL_EXT.TGR8,Stall on No AD Transgress Credits For Transgress 8
+UNC_H_CACHE_LINES_VICTIMIZED.E_STATE,Cache Lookups. Counts the number of times the LLC was accessed. Writeback transactions from L2 to the LLC  This includes all write transactions -- both Cachable and UC.
+UNC_H_CACHE_LINES_VICTIMIZED.F_STATE,Cache Lookups. Counts the number of times the LLC was accessed. Filters for any transaction originating from the IPQ or IRQ.  This does not include lookups originating from the ISMQ.
+UNC_H_CACHE_LINES_VICTIMIZED.LOCAL,Lines Victimized that Match NID
+UNC_H_CACHE_LINES_VICTIMIZED.M_STATE,Cache Lookups. Counts the number of times the LLC was accessed. Read transactions
+UNC_H_CACHE_LINES_VICTIMIZED.REMOTE,Lines Victimized that Does Not Match NID
+UNC_H_CACHE_LINES_VICTIMIZED.S_STATE,Cache Lookups. Counts the number of times the LLC was accessed. Filters for only snoop requests coming from the remote socket(s) through the IPQ.
+UNC_H_CLOCK,Uncore Clocks
+UNC_H_EGRESS_HORZ_ADS_USED.AD,CMS Horizontal ADS Used
+UNC_H_EGRESS_HORZ_ADS_USED.AK,CMS Horizontal ADS Used
+UNC_H_EGRESS_HORZ_ADS_USED.BL,CMS Horizontal ADS Used
+UNC_H_EGRESS_HORZ_BYPASS.AD,CMS Horizontal Egress Bypass. AD ring
+UNC_H_EGRESS_HORZ_BYPASS.AK,CMS Horizontal Egress Bypass. AK ring
+UNC_H_EGRESS_HORZ_BYPASS.BL,CMS Horizontal Egress Bypass. BL ring
+UNC_H_EGRESS_HORZ_BYPASS.IV,CMS Horizontal Egress Bypass. IV ring
+UNC_H_EGRESS_HORZ_CYCLES_FULL.AD,Cycles CMS Horizontal Egress Queue is Full AD
+UNC_H_EGRESS_HORZ_CYCLES_FULL.AK,Cycles CMS Horizontal Egress Queue is Full AK
+UNC_H_EGRESS_HORZ_CYCLES_FULL.BL,Cycles CMS Horizontal Egress Queue is Full BL
+UNC_H_EGRESS_HORZ_CYCLES_FULL.IV,Cycles CMS Horizontal Egress Queue is Full IV
+UNC_H_EGRESS_HORZ_CYCLES_NE.AD,Cycles CMS Horizontal Egress Queue is Not Empty AD
+UNC_H_EGRESS_HORZ_CYCLES_NE.AK,Cycles CMS Horizontal Egress Queue is Not Empty AK
+UNC_H_EGRESS_HORZ_CYCLES_NE.BL,Cycles CMS Horizontal Egress Queue is Not Empty BL
+UNC_H_EGRESS_HORZ_CYCLES_NE.IV,Cycles CMS Horizontal Egress Queue is Not Empty IV
+UNC_H_EGRESS_HORZ_INSERTS.AD,CMS Horizontal Egress Inserts AD
+UNC_H_EGRESS_HORZ_INSERTS.AK,CMS Horizontal Egress Inserts AK
+UNC_H_EGRESS_HORZ_INSERTS.BL,CMS Horizontal Egress Inserts BL
+UNC_H_EGRESS_HORZ_INSERTS.IV,CMS Horizontal Egress Inserts IV
+UNC_H_EGRESS_HORZ_NACK.AD,CMS Horizontal Egress NACKs
+UNC_H_EGRESS_HORZ_NACK.AK,CMS Horizontal Egress NACKs
+UNC_H_EGRESS_HORZ_NACK.BL,CMS Horizontal Egress NACKs
+UNC_H_EGRESS_HORZ_NACK.IV,CMS Horizontal Egress NACKs
+UNC_H_EGRESS_HORZ_OCCUPANCY.AD,CMS Horizontal Egress Occupancy AD
+UNC_H_EGRESS_HORZ_OCCUPANCY.AK,CMS Horizontal Egress Occupancy AK
+UNC_H_EGRESS_HORZ_OCCUPANCY.BL,CMS Horizontal Egress Occupancy BL
+UNC_H_EGRESS_HORZ_OCCUPANCY.IV,CMS Horizontal Egress Occupancy IV
+UNC_H_EGRESS_HORZ_STARVED.AD,CMS Horizontal Egress Injection Starvation
+UNC_H_EGRESS_HORZ_STARVED.AK,CMS Horizontal Egress Injection Starvation
+UNC_H_EGRESS_HORZ_STARVED.BL,CMS Horizontal Egress Injection Starvation
+UNC_H_EGRESS_HORZ_STARVED.IV,CMS Horizontal Egress Injection Starvation
+UNC_H_EGRESS_ORDERING.IV_SNP_GO_DN,Counts number of cycles IV was blocked in the TGR Egress due to SNP/GO Ordering requirements
+UNC_H_EGRESS_ORDERING.IV_SNP_GO_UP,Counts number of cycles IV was blocked in the TGR Egress due to SNP/GO Ordering requirements
+UNC_H_EGRESS_VERT_ADS_USED.AD_AG0,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_ADS_USED.AD_AG1,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_ADS_USED.AK_AG0,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_ADS_USED.AK_AG1,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_ADS_USED.BL_AG0,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_ADS_USED.BL_AG1,CMS Vertical ADS Used
+UNC_H_EGRESS_VERT_BYPASS.AD_AG0,CMS Vertical Egress Bypass. AD ring agent 0
+UNC_H_EGRESS_VERT_BYPASS.AD_AG1,CMS Vertical Egress Bypass. AD ring agent 1
+UNC_H_EGRESS_VERT_BYPASS.AK_AG0,CMS Vertical Egress Bypass. AK ring agent 0
+UNC_H_EGRESS_VERT_BYPASS.AK_AG1,CMS Vertical Egress Bypass. AK ring agent 1
+UNC_H_EGRESS_VERT_BYPASS.BL_AG0,CMS Vertical Egress Bypass. BL ring agent 0
+UNC_H_EGRESS_VERT_BYPASS.BL_AG1,CMS Vertical Egress Bypass. BL ring agent 1
+UNC_H_EGRESS_VERT_BYPASS.IV,CMS Vertical Egress Bypass. IV ring agent 0
+UNC_H_EGRESS_VERT_CYCLES_FULL.AD_AG0,Cycles CMS Vertical Egress Queue Is Full AD - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_FULL.AD_AG1,Cycles CMS Vertical Egress Queue Is Full AD - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_FULL.AK_AG0,Cycles CMS Vertical Egress Queue Is Full AK - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_FULL.AK_AG1,Cycles CMS Vertical Egress Queue Is Full AK - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_FULL.BL_AG0,Cycles CMS Vertical Egress Queue Is Full BL - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_FULL.BL_AG1,Cycles CMS Vertical Egress Queue Is Full BL - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_FULL.IV_AG0,Cycles CMS Vertical Egress Queue Is Full IV - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_NE.AD_AG0,Cycles CMS Vertical Egress Queue Is Not Empty AD - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_NE.AD_AG1,Cycles CMS Vertical Egress Queue Is Not Empty AD - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_NE.AK_AG0,Cycles CMS Vertical Egress Queue Is Not Empty AK - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_NE.AK_AG1,Cycles CMS Vertical Egress Queue Is Not Empty AK - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_NE.BL_AG0,Cycles CMS Vertical Egress Queue Is Not Empty BL - Agent 0
+UNC_H_EGRESS_VERT_CYCLES_NE.BL_AG1,Cycles CMS Vertical Egress Queue Is Not Empty BL - Agent 1
+UNC_H_EGRESS_VERT_CYCLES_NE.IV_AG0,Cycles CMS Vertical Egress Queue Is Not Empty IV - Agent 0
+UNC_H_EGRESS_VERT_INSERTS.AD_AG0,CMS Vert Egress Allocations AD - Agent 0
+UNC_H_EGRESS_VERT_INSERTS.AD_AG1,CMS Vert Egress Allocations AD - Agent 1
+UNC_H_EGRESS_VERT_INSERTS.AK_AG0,CMS Vert Egress Allocations AK - Agent 0
+UNC_H_EGRESS_VERT_INSERTS.AK_AG1,CMS Vert Egress Allocations AK - Agent 1
+UNC_H_EGRESS_VERT_INSERTS.BL_AG0,CMS Vert Egress Allocations BL - Agent 0
+UNC_H_EGRESS_VERT_INSERTS.BL_AG1,CMS Vert Egress Allocations BL - Agent 1
+UNC_H_EGRESS_VERT_INSERTS.IV_AG0,CMS Vert Egress Allocations IV - Agent 0
+UNC_H_EGRESS_VERT_NACK.AD_AG0,CMS Vertical Egress NACKs
+UNC_H_EGRESS_VERT_NACK.AD_AG1,CMS Vertical Egress NACKs
+UNC_H_EGRESS_VERT_NACK.AK_AG0,CMS Vertical Egress NACKs Onto AK Ring
+UNC_H_EGRESS_VERT_NACK.AK_AG1,CMS Vertical Egress NACKs
+UNC_H_EGRESS_VERT_NACK.BL_AG0,CMS Vertical Egress NACKs Onto BL Ring
+UNC_H_EGRESS_VERT_NACK.BL_AG1,CMS Vertical Egress NACKs
+UNC_H_EGRESS_VERT_NACK.IV_AG0,CMS Vertical Egress NACKs
+UNC_H_EGRESS_VERT_OCCUPANCY.AD_AG0,CMS Vert Egress Occupancy AD - Agent 0
+UNC_H_EGRESS_VERT_OCCUPANCY.AD_AG1,CMS Vert Egress Occupancy AD - Agent 1
+UNC_H_EGRESS_VERT_OCCUPANCY.AK_AG0,CMS Vert Egress Occupancy AK - Agent 0
+UNC_H_EGRESS_VERT_OCCUPANCY.AK_AG1,CMS Vert Egress Occupancy AK - Agent 1
+UNC_H_EGRESS_VERT_OCCUPANCY.BL_AG0,CMS Vert Egress Occupancy BL - Agent 0
+UNC_H_EGRESS_VERT_OCCUPANCY.BL_AG1,CMS Vert Egress Occupancy BL - Agent 1
+UNC_H_EGRESS_VERT_OCCUPANCY.IV_AG0,CMS Vert Egress Occupancy IV - Agent 0
+UNC_H_EGRESS_VERT_STARVED.AD_AG0,CMS Vertical Egress Injection Starvation
+UNC_H_EGRESS_VERT_STARVED.AD_AG1,CMS Vertical Egress Injection Starvation
+UNC_H_EGRESS_VERT_STARVED.AK_AG0,CMS Vertical Egress Injection Starvation Onto AK Ring
+UNC_H_EGRESS_VERT_STARVED.AK_AG1,CMS Vertical Egress Injection Starvation
+UNC_H_EGRESS_VERT_STARVED.BL_AG0,CMS Vertical Egress Injection Starvation Onto BL Ring
+UNC_H_EGRESS_VERT_STARVED.BL_AG1,CMS Vertical Egress Injection Starvation
+UNC_H_EGRESS_VERT_STARVED.IV_AG0,CMS Vertical Egress Injection Starvation
+UNC_H_FAST_ASSERTED.HORZ,Counts cycles source throttling is adderted - horizontal
+UNC_H_FAST_ASSERTED.VERT,Counts cycles source throttling is adderted - vertical
+UNC_H_HORZ_RING_AD_IN_USE.LEFT_EVEN,Counts the number of cycles that the Horizontal AD ring is being used at this ring stop - Left and Even
+UNC_H_HORZ_RING_AD_IN_USE.LEFT_ODD,Counts the number of cycles that the Horizontal AD ring is being used at this ring stop - Left and Odd
+UNC_H_HORZ_RING_AD_IN_USE.RIGHT_EVEN,Counts the number of cycles that the Horizontal AD ring is being used at this ring stop - Right and Even
+UNC_H_HORZ_RING_AD_IN_USE.RIGHT_ODD,Counts the number of cycles that the Horizontal AD ring is being used at this ring stop - Right and Odd
+UNC_H_HORZ_RING_AK_IN_USE.LEFT_EVEN,Counts the number of cycles that the Horizontal AK ring is being used at this ring stop - Left and Even
+UNC_H_HORZ_RING_AK_IN_USE.LEFT_ODD,Counts the number of cycles that the Horizontal AK ring is being used at this ring stop - Left and Odd
+UNC_H_HORZ_RING_AK_IN_USE.RIGHT_EVEN,Counts the number of cycles that the Horizontal AK ring is being used at this ring stop - Right and Even
+UNC_H_HORZ_RING_AK_IN_USE.RIGHT_ODD,Counts the number of cycles that the Horizontal AK ring is being used at this ring stop - Right and Odd
+UNC_H_HORZ_RING_BL_IN_USE.LEFT_EVEN,Counts the number of cycles that the Horizontal BL ring is being used at this ring stop - Left and Even
+UNC_H_HORZ_RING_BL_IN_USE.LEFT_ODD,Counts the number of cycles that the Horizontal BL ring is being used at this ring stop - Left and Odd
+UNC_H_HORZ_RING_BL_IN_USE.RIGHT_EVEN,Counts the number of cycles that the Horizontal BL ring is being used at this ring stop - Right and Even
+UNC_H_HORZ_RING_BL_IN_USE.RIGHT_ODD,Counts the number of cycles that the Horizontal BL ring is being used at this ring stop - Right and Odd
+UNC_H_HORZ_RING_IV_IN_USE.LEFT,Counts the number of cycles that the Horizontal IV ring is being used at this ring stop - Left
+UNC_H_HORZ_RING_IV_IN_USE.RIGHT,Counts the number of cycles that the Horizontal IV ring is being used at this ring stop - Right
+UNC_H_INGRESS_INSERTS.IPQ,Ingress Allocations. Counts number of allocations per cycle into the specified Ingress queue. - IPQ
+UNC_H_INGRESS_INSERTS.IRQ,Ingress Allocations. Counts number of allocations per cycle into the specified Ingress queue. - IRQ
+UNC_H_INGRESS_INSERTS.IRQ_REJ,Ingress Allocations. Counts number of allocations per cycle into the specified Ingress queue. - IRQ Rejected
+UNC_H_INGRESS_INSERTS.PRQ,Ingress Allocations. Counts number of allocations per cycle into the specified Ingress queue. - PRQ
+UNC_H_INGRESS_INSERTS.PRQ_REJ,Ingress Allocations. Counts number of allocations per cycle into the specified Ingress queue. - PRQ Rejected
+UNC_H_INGRESS_INT_STARVED.IPQ,Cycles with the IPQ in Internal Starvation.
+UNC_H_INGRESS_INT_STARVED.IRQ,Cycles with the IRQ in Internal Starvation.
+UNC_H_INGRESS_INT_STARVED.ISMQ,Cycles with the ISMQ in Internal Starvation.
+UNC_H_INGRESS_INT_STARVED.PRQ,Ingress internal starvation cycles. Counts cycles in internal starvation. This occurs when one or more of the entries in the ingress queue are being starved out by other entries in the queue.
+UNC_H_INGRESS_OCCUPANCY.IPQ,Ingress Occupancy. Counts number of entries in the specified Ingress queue in each cycle. - IPQ
+UNC_H_INGRESS_OCCUPANCY.IRQ,Ingress Occupancy. Counts number of entries in the specified Ingress queue in each cycle. - IRQ
+UNC_H_INGRESS_OCCUPANCY.IRQ_REJ,Ingress Occupancy. Counts number of entries in the specified Ingress queue in each cycle. - IRQ Rejected
+UNC_H_INGRESS_OCCUPANCY.PRQ,Ingress Occupancy. Counts number of entries in the specified Ingress queue in each cycle. - PRQ
+UNC_H_INGRESS_OCCUPANCY.PRQ_REJ,Ingress Occupancy. Counts number of entries in the specified Ingress queue in each cycle. - PRQ Rejected
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.AD_REQ_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.AD_RSP_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.AK_NON_UPI,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.BL_NCB_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.BL_NCS_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.BL_RSP_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.BL_WB_VN0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ0_REJECT.IV_NON_UPI,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ1_REJECT.ALLOW_SNP,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ1_REJECT.ANY_REJECT_IPQ0,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ1_REJECT.PA_MATCH,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ1_REJECT.SF_VICTIM,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IPQ1_REJECT.SF_WAY,Ingress Probe Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.AD_REQ_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.AD_RSP_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.AK_NON_UPI,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.BL_NCB_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.BL_NCS_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.BL_RSP_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.BL_WB_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ0_REJECT.IV_NON_UPI,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ1_REJECT.ALLOW_SNP,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ1_REJECT.ANY_REJECT_IRQ0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ1_REJECT.PA_MATCH,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ1_REJECT.SF_VICTIM,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_IRQ1_REJECT.SF_WAY,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.AD_REQ_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.AD_RSP_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.AK_NON_UPI,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.BL_NCB_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.BL_NCS_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.BL_RSP_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.BL_WB_VN0,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_REJECT.IV_NON_UPI,ISMQ Rejects
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.AD_REQ_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.AD_RSP_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.AK_NON_UPI,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.BL_NCB_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.BL_NCS_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.BL_RSP_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.BL_WB_VN0,ISMQ Retries
+UNC_H_INGRESS_RETRY_ISMQ0_RETRY.IV_NON_UPI,ISMQ Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.AD_REQ_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.AD_RSP_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.AK_NON_UPI,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.BL_NCB_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.BL_NCS_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.BL_RSP_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.BL_WB_VN0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER0_RETRY.IV_NON_UPI,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER1_RETRY.ALLOW_SNP,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER1_RETRY.ANY_REJECT_IRQ0,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER1_RETRY.PA_MATCH,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER1_RETRY.SF_VICTIM,Other Queue Retries
+UNC_H_INGRESS_RETRY_OTHER1_RETRY.SF_WAY,Other Queue Retries
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.AD_REQ_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.AD_RSP_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.AK_NON_UPI,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.BL_NCB_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.BL_NCS_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.BL_RSP_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.BL_WB_VN0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ0_REJECT.IV_NON_UPI,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ1_REJECT.ALLOW_SNP,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ1_REJECT.ANY_REJECT_IRQ0,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ1_REJECT.PA_MATCH,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ1_REJECT.SF_VICTIM,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_PRQ1_REJECT.SF_WAY,Ingress Request Queue Rejects
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.AD_REQ_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.AD_RSP_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.AK_NON_UPI,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.BL_NCB_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.BL_NCS_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.BL_RSP_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.BL_WB_VN0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q0_RETRY.IV_NON_UPI,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q1_RETRY.ALLOW_SNP,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q1_RETRY.ANY_REJECT_IRQ0,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q1_RETRY.PA_MATCH,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q1_RETRY.SF_VICTIM,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_INGRESS_RETRY_REQ_Q1_RETRY.SF_WAY,"REQUESTQ"""" includes:  IRQ, PRQ, IPQ, RRQ, WBQ (everything except for ISMQ)"
+UNC_H_MISC.CV0_PREF_MISS,Miscellaneous events in the Cbo. CV0 Prefetch Miss
+UNC_H_MISC.CV0_PREF_VIC,Miscellaneous events in the Cbo. CV0 Prefetch Victim
+UNC_H_MISC.RFO_HIT_S,Miscellaneous events in the Cbo. RFO HitS
+UNC_H_MISC.RSPI_WAS_FSE,Miscellaneous events in the Cbo. Silent Snoop Eviction
+UNC_H_MISC.WC_ALIASING,Miscellaneous events in the Cbo. Write Combining Aliasing
+UNC_H_RING_BOUNCES_HORZ.AD,"Number of incoming messages from the Horizontal ring that were bounced, by ring type."
+UNC_H_RING_BOUNCES_HORZ.AK,"Number of incoming messages from the Horizontal ring that were bounced, by ring type - Acknowledgements to core"
+UNC_H_RING_BOUNCES_HORZ.BL,"Number of incoming messages from the Horizontal ring that were bounced, by ring type - Data Responses to core."
+UNC_H_RING_BOUNCES_HORZ.IV,"Number of incoming messages from the Horizontal ring that were bounced, by ring type - Snoops of processor's cache."
+UNC_H_RING_BOUNCES_VERT.AD,"Number of incoming messages from the Vertical ring that were bounced, by ring type."
+UNC_H_RING_BOUNCES_VERT.AK,"Number of incoming messages from the Vertical ring that were bounced, by ring type - Acknowledgements to core"
+UNC_H_RING_BOUNCES_VERT.BL,"Number of incoming messages from the Vertical ring that were bounced, by ring type - Data Responses to core."
+UNC_H_RING_BOUNCES_VERT.IV,"Number of incoming messages from the Vertical ring that were bounced, by ring type - Snoops of processor's cache."
+UNC_H_RING_SINK_STARVED_HORZ.AD,Horizontal ring sink starvation count - AD ring
+UNC_H_RING_SINK_STARVED_HORZ.AK,Horizontal ring sink starvation count - AK ring
+UNC_H_RING_SINK_STARVED_HORZ.BL,Horizontal ring sink starvation count - BL ring
+UNC_H_RING_SINK_STARVED_HORZ.IV,Horizontal ring sink starvation count - IV ring
+UNC_H_RING_SINK_STARVED_VERT.AD,Vertical ring sink starvation count - AD ring
+UNC_H_RING_SINK_STARVED_VERT.AK,Vertical ring sink starvation count - AK ring
+UNC_H_RING_SINK_STARVED_VERT.BL,Vertical ring sink starvation count - BL ring
+UNC_H_RING_SINK_STARVED_VERT.IV,Vertical ring sink starvation count - IV ring
+UNC_H_RING_SRC_THRTL,Counts cycles in throttle mode.
+UNC_H_SF_LOOKUP.ANY,Cache Lookups. Counts the number of times the LLC was accessed. Filters for any transaction originating from the IPQ or IRQ.  This does not include lookups originating from the ISMQ.
+UNC_H_SF_LOOKUP.DATA_READ,Cache Lookups. Counts the number of times the LLC was accessed. Read transactions
+UNC_H_SF_LOOKUP.REMOTE_SNOOP,Cache Lookups. Counts the number of times the LLC was accessed. Filters for only snoop requests coming from the remote socket(s) through the IPQ.
+UNC_H_SF_LOOKUP.WRITE,Cache Lookups. Counts the number of times the LLC was accessed. Writeback transactions from L2 to the LLC  This includes all write transactions -- both Cachable and UC.
+UNC_H_TG_INGRESS_BUSY_STARVED.AD_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, because a message from the other queue has higher priority"
+UNC_H_TG_INGRESS_BUSY_STARVED.AD_CRD,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, because a message from the other queue has higher priority"
+UNC_H_TG_INGRESS_BUSY_STARVED.BL_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, because a message from the other queue has higher priority"
+UNC_H_TG_INGRESS_BUSY_STARVED.BL_CRD,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, because a message from the other queue has higher priority"
+UNC_H_TG_INGRESS_BYPASS.AD_BNC,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_BYPASS.AD_CRD,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_BYPASS.AK_BNC,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_BYPASS.BL_BNC,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_BYPASS.BL_CRD,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_BYPASS.IV_BNC,Transgress Ingress Bypass. Number of packets bypassing the CMS Ingress .
+UNC_H_TG_INGRESS_CRD_STARVED.AD_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.AD_CRD,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.AK_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.BL_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.BL_CRD,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.IFV,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_CRD_STARVED.IV_BNC,"Transgress Injection Starvation. Counts cycles under injection starvation mode.  This starvation is triggered when the CMS Ingress cannot send a transaction onto the mesh for a long period of time.  In this case, the Ingress is unable to forward to the Egress due to a lack of credit."
+UNC_H_TG_INGRESS_INSERTS.AD_BNC,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_INSERTS.AD_CRD,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_INSERTS.AK_BNC,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_INSERTS.BL_BNC,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_INSERTS.BL_CRD,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_INSERTS.IV_BNC,Transgress Ingress Allocations. Number of allocations into the CMS Ingress  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.AD_BNC,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.AD_CRD,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.AK_BNC,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.BL_BNC,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.BL_CRD,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TG_INGRESS_OCCUPANCY.IV_BNC,Transgress Ingress Occupancy. Occupancy event for the Ingress buffers in the CMS  The Ingress is used to queue up requests received from the mesh
+UNC_H_TOR_INSERTS.EVICT,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -SF/LLC Evictions
+UNC_H_TOR_INSERTS.HIT,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -Hit (Not a Miss)
+UNC_H_TOR_INSERTS.IPQ,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IPQ
+UNC_H_TOR_INSERTS.IRQ,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -IRQ
+UNC_H_TOR_INSERTS.MISS,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -Miss
+UNC_H_TOR_INSERTS.PRQ,Counts the number of entries successfuly inserted into the TOR that match  qualifications specified by the subevent -PRQ
+UNC_H_TOR_OCCUPANCY.EVICT,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -SF/LLC Evictions"
+UNC_H_TOR_OCCUPANCY.HIT,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -Hit (Not a Miss)"
+UNC_H_TOR_OCCUPANCY.IPQ,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IPQ"
+UNC_H_TOR_OCCUPANCY.IPQ_HIT,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IPQ hit"
+UNC_H_TOR_OCCUPANCY.IPQ_MISS,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IPQ miss"
+UNC_H_TOR_OCCUPANCY.IRQ,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IRQ or PRQ"
+UNC_H_TOR_OCCUPANCY.IRQ_HIT,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IRQ or PRQ hit"
+UNC_H_TOR_OCCUPANCY.IRQ_MISS,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -IRQ or PRQ miss"
+UNC_H_TOR_OCCUPANCY.MISS,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -Miss"
+UNC_H_TOR_OCCUPANCY.PRQ,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -PRQ"
+UNC_H_TOR_OCCUPANCY.PRQ_HIT,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -PRQ hit"
+UNC_H_TOR_OCCUPANCY.PRQ_MISS,"For each cycle, this event accumulates the number of valid entries in the TOR that match qualifications specified by the subevent -PRQ miss"
+UNC_H_U_CLOCKTICKS,Uncore Clocks
+UNC_H_VERT_RING_AD_IN_USE.DN_EVEN,Counts the number of cycles that the Vertical AD ring is being used at this ring stop - Down and Even
+UNC_H_VERT_RING_AD_IN_USE.DN_ODD,Counts the number of cycles that the Vertical AD ring is being used at this ring stop - Down and Odd
+UNC_H_VERT_RING_AD_IN_USE.UP_EVEN,Counts the number of cycles that the Vertical AD ring is being used at this ring stop - Up and Even
+UNC_H_VERT_RING_AD_IN_USE.UP_ODD,Counts the number of cycles that the Vertical AD ring is being used at this ring stop - Up and Odd
+UNC_H_VERT_RING_AK_IN_USE.DN_EVEN,Counts the number of cycles that the Vertical AK ring is being used at this ring stop - Down and Even
+UNC_H_VERT_RING_AK_IN_USE.DN_ODD,Counts the number of cycles that the Vertical AK ring is being used at this ring stop - Down and Odd
+UNC_H_VERT_RING_AK_IN_USE.UP_EVEN,Counts the number of cycles that the Vertical AK ring is being used at this ring stop - Up and Even
+UNC_H_VERT_RING_AK_IN_USE.UP_ODD,Counts the number of cycles that the Vertical AK ring is being used at this ring stop - Up and Odd
+UNC_H_VERT_RING_BL_IN_USE.DN_EVEN,Counts the number of cycles that the Vertical BL ring is being used at this ring stop - Down and Even
+UNC_H_VERT_RING_BL_IN_USE.DN_ODD,Counts the number of cycles that the Vertical BL ring is being used at this ring stop - Down and Odd
+UNC_H_VERT_RING_BL_IN_USE.UP_EVEN,Counts the number of cycles that the Vertical BL ring is being used at this ring stop - Up and Even
+UNC_H_VERT_RING_BL_IN_USE.UP_ODD,Counts the number of cycles that the Vertical BL ring is being used at this ring stop - Up and Odd
+UNC_H_VERT_RING_IV_IN_USE.DN,Counts the number of cycles that the Vertical IV ring is being used at this ring stop - Down
+UNC_H_VERT_RING_IV_IN_USE.UP,Counts the number of cycles that the Vertical IV ring is being used at this ring stop - Up
+UNC_M_CAS_COUNT.ALL,CAS All
+UNC_M_CAS_COUNT.RD,CAS Reads
+UNC_M_CAS_COUNT.WR,CAS Writes
+UNC_M_D_CLOCKTICKS,DCLK count
+UNC_M_U_CLOCKTICKS,UCLK count
+UNC_M2P_EGRESS_CYCLES_FULL.AD_0,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  AD_0
+UNC_M2P_EGRESS_CYCLES_FULL.AD_1,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  AD_1
+UNC_M2P_EGRESS_CYCLES_FULL.AK_0,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  AK_0
+UNC_M2P_EGRESS_CYCLES_FULL.AK_1,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  AK_1
+UNC_M2P_EGRESS_CYCLES_FULL.BL_0,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  BL_0
+UNC_M2P_EGRESS_CYCLES_FULL.BL_1,Egress (to CMS) Cycles Full. Counts the number of cycles when the M2PCIe Egress is full.  BL_1
+UNC_M2P_EGRESS_CYCLES_NE.AD_0,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  AD_0
+UNC_M2P_EGRESS_CYCLES_NE.AD_1,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  AD_1
+UNC_M2P_EGRESS_CYCLES_NE.AK_0,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  AK_0
+UNC_M2P_EGRESS_CYCLES_NE.AK_1,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  AK_1
+UNC_M2P_EGRESS_CYCLES_NE.BL_0,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  BL_0
+UNC_M2P_EGRESS_CYCLES_NE.BL_1,Egress (to CMS) Cycles Not Empty. Counts the number of cycles when the M2PCIe Egress is not empty.  BL_1
+UNC_M2P_EGRESS_INSERTS.AD_0,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AD_0
+UNC_M2P_EGRESS_INSERTS.AD_1,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AD_1
+UNC_M2P_EGRESS_INSERTS.AK_0,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AK_0
+UNC_M2P_EGRESS_INSERTS.AK_1,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AK_1
+UNC_M2P_EGRESS_INSERTS.AK_CRD_0,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AK_CRD_0
+UNC_M2P_EGRESS_INSERTS.AK_CRD_1,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. AK_CRD_1
+UNC_M2P_EGRESS_INSERTS.BL_0,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. BL_0
+UNC_M2P_EGRESS_INSERTS.BL_1,Egress (to CMS) Ingress. Counts the number of number of messages inserted into the  the M2PCIe Egress queue. BL_1
+UNC_M2P_INGRESS_CYCLES_NE.ALL,Ingress Queue Cycles Not Empty. Counts the number of cycles when the M2PCIe Ingress is not empty.ALL
+UNC_M2P_INGRESS_CYCLES_NE.CBO_IDI,Ingress Queue Cycles Not Empty. Counts the number of cycles when the M2PCIe Ingress is not empty.CBO_IDI
+UNC_M2P_INGRESS_CYCLES_NE.CBO_NCB,Ingress Queue Cycles Not Empty. Counts the number of cycles when the M2PCIe Ingress is not empty.CBO_NCB
+UNC_M2P_INGRESS_CYCLES_NE.CBO_NCS,Ingress Queue Cycles Not Empty. Counts the number of cycles when the M2PCIe Ingress is not empty.CBO_NCS
+DEMAND_DATA_RD: response,Counts demand cacheable data and L1 prefetch data reads  that Accounts for responses which miss its own tile's L2.
+DEMAND_RFO: response,Counts Demand cacheable data writes  that Accounts for responses which miss its own tile's L2.
+DEMAND_CODE_RD: response,Counts demand code reads and prefetch code reads  that Accounts for responses which miss its own tile's L2.
+PF_L2_RFO: response,Counts L2 data RFO prefetches (includes PREFETCHW instruction)  that Accounts for responses which miss its own tile's L2.
+PF_L2_CODE_RD: response,Counts L2 code HW prefetches  that Accounts for responses which miss its own tile's L2.
+PARTIAL_READS: response,Counts Partial reads (UC or WC and is valid only for Outstanding response type).   that Accounts for responses which miss its own tile's L2.
+PARTIAL_WRITES: response,Counts Partial writes (UC or WT or WP and should be programmed on PMC1)  that Accounts for responses which miss its own tile's L2.
+UC_CODE_READS: response,Counts UC code reads (valid only for Outstanding response type)   that Accounts for responses which miss its own tile's L2.
+BUS_LOCKS: response,Counts Bus locks and split lock requests  that Accounts for responses which miss its own tile's L2.
+FULL_STREAMING_STORES: response,Counts Full streaming stores (WC and should be programmed on PMC1)  that Accounts for responses which miss its own tile's L2.
+PF_SOFTWARE: response,Counts Software Prefetches  that Accounts for responses which miss its own tile's L2.
+PF_L1_DATA_RD: response,Counts L1 data HW prefetches  that Accounts for responses which miss its own tile's L2.
+PARTIAL_STREAMING_STORES: response,Counts Partial streaming stores (WC and should be programmed on PMC1)  that Accounts for responses which miss its own tile's L2.
+STREAMING_STORES: response,Counts all streaming stores (WC and should be programmed on PMC1)  that Accounts for responses which miss its own tile's L2.
+ANY_REQUEST: response,Counts any request  that Accounts for responses which miss its own tile's L2.
+ANY_DATA_RD: response,Counts Demand cacheable data and L1 prefetch data read requests   that Accounts for responses which miss its own tile's L2.
+ANY_RFO: response,Counts Demand cacheable data write requests   that Accounts for responses which miss its own tile's L2.
+ANY_CODE_RD: response,Counts Demand code reads and prefetch code read requests   that Accounts for responses which miss its own tile's L2.
+ANY_READ: response,Counts any Read request   that Accounts for responses which miss its own tile's L2.
+ANY_PF_L2: response,Counts any Prefetch requests  that Accounts for responses which miss its own tile's L2.

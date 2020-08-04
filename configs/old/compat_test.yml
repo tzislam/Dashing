@@ -1,0 +1,27 @@
+compat_test:
+  global_task: True
+  tasks:
+    - compat_nyx1
+    - compat_nyx2
+    - modules.compatibility_score.compat_task
+
+  data_rescale: False
+
+
+compat_nyx1:
+  data: 'data/nyx_data/jobs/'
+  procs:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32
+
+compat_nyx2:
+  data: 'data/nyx_data/jobs/'
+  procs:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32
