@@ -1,0 +1,1771 @@
+HDF5 "00/perf-dump.1.h5" {
+GROUP "/" {
+   GROUP "Nyx::remove_virtual_particles()" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 467, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1218, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 197, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 349, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 287, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1122, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 40, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 290, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 270, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1100, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 742, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 108, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.00018692, 0.000185013, 0.000184774, 0
+         }
+      }
+   }
+   GROUP "Nyx::setup_virtual_particles()" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 462, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1136, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 173, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 341, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 274, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1102, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 40, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 290, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 270, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1100, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 722, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 87, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.000222921, 0.000148535, 0.000169039, 0
+         }
+      }
+   }
+   GROUP "Nyx::strang_hydro()" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 96993435, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 24004769419, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 4306444772, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2649220847, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2794810392, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 24994248832, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 16611462, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2788005925, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2781549585, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 22773836740, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 13019117227, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 124477297, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 67.8536, 67.7827, 67.7048, 0
+         }
+      }
+   }
+   GROUP "analriem" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 12317262, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1208576515, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 177315161, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 93162420, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 90798215, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1214300160, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9954580, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 94556160, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 89579520, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 741950186, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 855551254, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8164040, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 13.3494, 13.322, 13.2688, 0
+         }
+      }
+   }
+   GROUP "ctoprim" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 632734, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 200237071, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9900767, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 22102529, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 22077490, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 198729846, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 10615, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 21864964, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 21859844, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 209142256, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 54154609, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1667561, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.874965, 0.873946, 0.869325, 0
+         }
+      }
+   }
+   GROUP "loop1" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 404874, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9277391, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2402639, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 574690, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532696, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9195522, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81966, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6799360, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5857282, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 458763, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.186906, 0.187814, 0.186015, 0
+         }
+      }
+   }
+   GROUP "loop2" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 182089, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11544080, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 685814, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 553443, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532515, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11612162, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81924, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9297920, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 3932162, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 403243, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.119629, 0.119551, 0.119031, 0
+         }
+      }
+   }
+   GROUP "loop3" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 226040, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11017846, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 510361, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 555318, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532510, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11038722, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81928, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8949760, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 3686402, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 299968, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.105516, 0.106432, 0.105645, 0
+         }
+      }
+   }
+   GROUP "loop4" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532501, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11608844, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 682371, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 555422, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 545677, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11612162, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81928, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9297920, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 3932162, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 480822, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.121092, 0.121451, 0.118775, 0
+         }
+      }
+   }
+   GROUP "loop5" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 173026, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11414280, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 510385, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 553311, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 533038, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 11489282, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81928, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8990720, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 4096002, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 267350, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.103415, 0.103414, 0.102819, 0
+         }
+      }
+   }
+   GROUP "loop6" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 125063, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 13310231, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 307449, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 553598, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532649, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 13250562, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81929, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6021120, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8642562, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 108497, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.106865, 0.107234, 0.107773, 0
+         }
+      }
+   }
+   GROUP "loop7" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 165781, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 10145293, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 494915, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 553321, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532636, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 10260482, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81929, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8990720, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2867202, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 272211, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.103385, 0.103098, 0.103032, 0
+         }
+      }
+   }
+   GROUP "loop8" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 98141, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 14238296, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 546364, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 554600, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532601, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 14274562, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81926, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 9707520, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6184962, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 274038, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.106535, 0.106515, 0.106525, 0
+         }
+      }
+   }
+   GROUP "loop9" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 205218, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 10136248, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 496243, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 553172, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532590, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 10260482, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 81928, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 573440, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 532480, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 8990720, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2867202, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 314494, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.10554, 0.106662, 0.105949, 0
+         }
+      }
+   }
+   GROUP "passive_advection" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 654870, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 64595487, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 23900978, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1412689, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1331794, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 64634622, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 204834, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1433600, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1331200, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 57876222, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 30464000, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 3012531, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0.303256, 0.301235, 0.301265, 0
+         }
+      }
+   }
+   GROUP "transz" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 0, 0, 0, 0
+         }
+      }
+   }
+   GROUP "x_direction" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 3845820, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1211696389, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 221394466, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6258120, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5992320, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1109934077, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 922111, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6451200, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5990400, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 867800199, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 443785490, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 74494097, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2.70818, 2.70269, 2.69816, 0
+         }
+      }
+   }
+   GROUP "y_direction" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 4793404, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1241985336, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 223119025, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6351769, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5992308, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1125345559, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 922088, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 6451200, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5990400, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 872168504, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 451647752, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 82231241, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2.73699, 2.74664, 2.73582, 0
+         }
+      }
+   }
+   GROUP "z_direction" {
+      DATASET "BACLEARS:ANY" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 4078687, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1482371202, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_JMP" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 187491656, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_DIRECT_NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5568579, 0
+         }
+      }
+      DATASET "BR_INST_EXEC:ALL_INDIRECT_NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5325491, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 1310622257, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:FAR_BRANCH" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 819806, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_CALL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5734400, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_RETURN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 5324800, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NEAR_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 895387986, 0
+         }
+      }
+      DATASET "BR_INST_RETIRED:NOT_TAKEN" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 590101281, 0
+         }
+      }
+      DATASET "BR_MISP_EXEC:ALL_CONDITIONAL" {
+         DATATYPE  H5T_STD_I64LE
+         DATASPACE  SIMPLE { ( 1, 1, 2 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 120797764, 0
+         }
+      }
+      DATASET "Runtime" {
+         DATATYPE  H5T_IEEE_F64LE
+         DATASPACE  SIMPLE { ( 1, 1, 4 ) / ( 1, 1, H5S_UNLIMITED ) }
+         DATA {
+         (0,0,0): 2.90312, 2.90411, 2.89925, 0
+         }
+      }
+   }
+}
+}
