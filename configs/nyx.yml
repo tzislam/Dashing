@@ -21,6 +21,7 @@ nyx:
     - viz.barchart.load_imbalance
   rsm_use_nn_solver: True
   name: 'Nyx'
+
 nyx_huge:
   data: 'data/nyx_hugepages4M/jobs/'
   procs:
