@@ -1,5 +1,5 @@
 # Dashing
-A programmable and extenddable framework for understanding the resource utilization behaviors of HPC applications, especially while scaling on a node.
+A programmable and extendable framework for understanding the resource utilization behaviors of HPC applications, especially while scaling on a node.
 
 # About
 Many HPC application scientists create their own in-house tools for the analysis and visualization of the performance of their scientific applications. Towards this goal, we present Dashing--a framework of interpretable machine learning techniques for understanding the resource utilization behaviors of HPC applications and conducting quantitative comparison of performance between applications. Dashing provides a highly configurable ML pipeline, present the breakdown of factors impacting the on-node scalability of applications in an intuitively hierarchical format. Provided with performance metrics in HDF5 or CSV format, Dashing can generate analysis reports, performance statistics and several visualizations to assist with optimizing any application.
@@ -67,8 +67,8 @@ Runtime,"32,42,34,40","33,43,13,43","323,232,2109,100"
 
 # Configuring
 
-1. Edit or create a new yaml file, which will be used to configure the pipeline to your needs. The yaml file must be formatted in the same fashion as the examples provided. Try editing `configs/global.yml` to get an idea of the structure.
-2. Each app's configuration must contain the following information:
+1. Edit or create a new yaml file, which will be used to configure the pipeline to your needs. The yaml file must be formatted in the same fashion as the examples provided. To start, try running the framework with `configs/nyx.yml`. There are several example configuration files in the configs directory to copy and modify.
+2. For single-source analysis: Each app's configuration must contain the following information:
 	* data: path to the directory containing perf-dump files.
 	* tasks: a list of functions that must be run. modules.resource_score.compute_rsm_task_all_regions must be first in order to generate rsm data
 	* rsm_use_nn_solver: True/False. Ideally, you should only use the value True.
@@ -88,7 +88,7 @@ Runtime,"32,42,34,40","33,43,13,43","323,232,2109,100"
 			- viz.sunburst.sunburst
 ```
 
-3. Comparing applications works slightly differently. These must be specified:
+3. Multi-source analysis: Currently, Dashing supports comparing across two single-source configurations. For comparing configurations, the following must be specified:
 	* tasks: a list of other configs (e.g. iamr_32, incflo_32) to load, followed by a list of comparative visualizations.
 	* compat_pairs: a list of perf-dump regions to compare, in the format:
 		** config_name:region_name,another_config:another_region
@@ -160,7 +160,7 @@ main:
 	* Compares the performance profiles between two applications. Configured in the same manner as above.
 
 #### Notes
-* If a setting is specified in both a global config and an app config, the app's version will overwrite the global's.
+* If a setting is specified in both in the `main` config and a single-source `app` config, the single-source `app`'s version will overwrite the main's.
 
 
 # Running
@@ -284,5 +284,5 @@ Refer to the following TWO papers if you make use of any part of the Dashing fra
 
 
 # Acknowledgments
-* Dr. Khaled Ibrahim
+* Dr. Khaled Z. Ibrahim
 * Dr. Ann Almgren

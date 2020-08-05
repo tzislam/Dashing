@@ -1,25 +1,3 @@
-nyx_old:
-  data: 'data/nyx_data/jobs/'
-  procs:
-    - 1
-    - 4
-    - 8
-    - 12
-    - 16
-    - 20
-    - 24
-    - 28
-    - 32
-  tasks:
-    - modules.resource_score.compute_rsm_task_all_regions
-    #- viz.barchart.create_rsm_error_barchart
-    - viz.barchart.create_rsm_percent_barchart
-    - viz.heatmap.create_heatmap
-    - viz.sunburst.sunburst
-    - viz.linechart.raw_values_per_proc_config
-  rsm_use_nn_solver: True
-  name: 'Nyx_w/o_amrex'
-
 nyx:
   data: 'data/nyx_haswell_amrex/jobs/'
   procs:
@@ -43,29 +21,6 @@ nyx:
   rsm_use_nn_solver: True
   name: 'Nyx_with_amrex'
 
-warpx:
-  data: 'data/warpx.v2/jobs/'
-  procs:
-    - 1
-    - 2
-    - 4
-    - 8
-    - 12
-    - 16
-    - 20
-    - 24
-    - 28
-    - 32
-  tasks:
-    - modules.resource_score.compute_rsm_task_all_regions
-    #- viz.barchart.create_rsm_error_barchart
-    - viz.barchart.create_rsm_percent_barchart
-    - viz.heatmap.create_heatmap
-    - viz.sunburst.sunburst
-    - viz.linechart.raw_values_per_proc_config
-  rsm_use_nn_solver: True
-  name: 'WarpX'
-
 incflo_32:
   data: 'data/incflo_data/n_cell_configurations/32/'
   tasks:
@@ -87,29 +42,6 @@ incflo_32:
     - 28
     - 32
   name: 'Incflo_32'
-
-incflo_64:
-  data: 'data/incflo_data/n_cell_configurations/64/'
-  tasks:
-    - modules.resource_score.compute_rsm_task_all_regions
-    #- viz.barchart.create_rsm_error_barchart
-    - viz.barchart.create_rsm_percent_barchart
-    - viz.heatmap.create_heatmap
-    - viz.sunburst.sunburst
-    - viz.linechart.raw_values_per_proc_config
-  procs:
-    - 1
-    - 2
-    - 4
-    - 8
-    - 12
-    - 16
-    - 20
-    - 24
-    - 28
-    - 32
-
-  name: 'Incflo_64'
 
 incflo_128:
   data: 'data/incflo_data/n_cell_configurations/128/'
@@ -185,9 +117,9 @@ main:
   rsm_print: True
   rsm_use_nn_solver: False
   port: 7510
-  save_heatmap: True
-  save_compat: True
-  save_sunburst: True
-  compat_labels: True
-  save_raw_line: True
-  show_raw_line_title: True
+#  save_heatmap: True
+#  save_compat: True
+#  save_sunburst: True
+#  compat_labels: True
+#  save_raw_line: True
+#  show_raw_line_title: True
