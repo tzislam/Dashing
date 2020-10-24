@@ -21,8 +21,9 @@ $ conda activate analysis_framework_env
 ## Using perf-dump
 
 Dashing was designed around using perf-dump and supports loading performance counter data directly from the output from perf-dump.
+However, if you prefer using other tools, please jump to the section *Using other tools*. Using perf-dump is NOT required.
 
-1. Collect performance data about an application using [perf-dump](https://github.com/tzislam/perf-dump)
+1. Collect performance data about an application using [perf-dump](https://github.com/LLNL/perf-dump)
 2. Store that data in the `data/` directory, in the following structure:
 
 ```
@@ -52,7 +53,7 @@ Dashing supports performance data collected with any tool as long as the input t
 event_name,"avg_data1_for_process1_thread1_for_reg1,avg_data2_for_process1_thread2_for_reg1,avg_data3_for_process2_thread1_for_reg1,avg_data4_for_process2_thread2_for_reg1","avg_data1_for_process1_thread1_for_reg2,avg_data2_for_process1_thread2_for_reg2,avg_data3_for_process2_thread1_for_reg2,avg_data4_for_process2_thread2_for_reg2","avg_data1_for_process1_thread1_for_reg3,avg_data2_for_process1_thread2_for_reg3,avg_data3_for_process2_thread1_for_reg3,avg_data4_for_process2_thread2_for_reg3"
 ```
 
-Following is an example csv file included in the data/test_data directory in the repository.
+Following is an example csv file included in the data/test_data directory in the repository. The command `python driver.py configs/csv_test.yml` should get you started with a working example. Note, that the CSV format described below is slightly different than the traditional CSV format of `rows mean configurations and columns mean counters`. Hence, you may need to pre-process your data to the following format. In future, we will incorporate the pre-processing step within Dashing to be more uesr-friendly.
 
 ```
 #Example in data/test_data/test.csv
